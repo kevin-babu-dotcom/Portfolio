@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import FancyButton from "./fancybutton";
 
 const Navbar = () => (
-  <div className=" h-full  md:w-full max-w-[375]">
+  <div className=" h-full justify-between flex w-full">
     <nav className="sticky bg-white md:m-0 hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] shadow-sm md:text-base border py-3 px-3 sm:px-8 md:rounded-3xl">
     <div className=" mx-auto flex bg-white  flex-col sm:flex-row items-center justify-between rounded-full">
       <div className="mb-0 sm:mb-0" >
@@ -13,8 +13,8 @@ const Navbar = () => (
         </FancyButton>
       </div>
       <div className="flex gap-3 ">
-        <FancyButton text="PROJECTS" className="border  p-3 px-6 bg-orange-300 text-black text-sm"to="/projects" />
-        <FancyButton text="RESUME" className="border p-4 px-8 bg-orange-300 text-black text-sm" to="/resume" />
+        <FancyButton text="PROJECTS" className="border px-6 bg-orange-300 text-black text-sm"to="/projects" />
+        <FancyButton text="RESUME" className="border  px-8 bg-orange-300 text-black text-sm" to="/resume" />
         <FancyButton text="CONTACT" className="border p-4 px-6 bg-orange-300 text-black text-sm"  to="/contact" />
       </div>
     </div>
