@@ -4,6 +4,8 @@ import FancyButton from "../components/fancybutton";
 import { motion, useInView } from "framer-motion";
 
 import potrait from "../assets/images/potrait.jpg"; // Make sure path is correct
+import code from "../assets/images/code.png"; // Import the code image
+
 
 const Home = () => {
   // Create refs for each section you want to animate
@@ -54,7 +56,7 @@ const Home = () => {
         <div className="md:grid grid-rows-[46.9fr_42.7fr_12.2fr] grid-cols-1 col-start-2 gap-4 h-full flex-1">
 
             <div className="CodeCard  bg-[#6C6594] border hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]  rounded-3xl h-full w-full">
-              <img  src="src/assets/images/code.png"  alt="A beautiful landscape"  className=" scale-85 object-cover h-full w-full rounded-2xl"  /> 
+              <img  src={code}  alt="A beautiful landscape"  className=" scale-85 object-cover h-full w-full rounded-2xl"  /> 
             </div>
 
             <div className="AboutCard hover:text-shadow-glow bg-white border hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] rounded-3xl md:relative flex flex-col h-full w-full">
