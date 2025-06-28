@@ -25,7 +25,7 @@ function App() {
 
       {/* 2. Main Content (z-10 above video) */}
       <CustomCursor />
-      <div className="relative z-10 flex min-h-screen items-center justify-center bg-white/5 backdrop-blur-md border border-white/50 shadow-glow rounded-2xl m-12 p-8">
+      <div className="relative z-10 flex min-h-screen items-center  bg-white/5 backdrop-blur-md border border-white/50 shadow-glow rounded-2xl m-12 p-8">
         
         <PageTransition>
           <Navbar />
