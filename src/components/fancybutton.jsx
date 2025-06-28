@@ -32,7 +32,7 @@ const FancyButton = ({ text, to, href,icon, onClick, className = "", ...props })
   // Base button classes
   const baseClasses = `
   flex items-center justify-center border border-black rounded-full font-gilroy
-  transition-colors no-underline cursor-pointer
+  transition-colors no-underline cursor-pointer hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]
   inline-block overflow-hidden
   ${currentColor}
   ${cleanedClassName}

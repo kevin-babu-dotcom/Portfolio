@@ -9,3 +9,28 @@
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
 }
+
+/* Custom text shadow utilities */
+.text-shadow-glow {
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+.hover\:text-shadow-glow:hover {
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+.text-shadow-sm {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.hover\:text-shadow-sm:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.text-shadow-lg {
+  text-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
+}
+
+.hover\:text-shadow-lg:hover {
+  text-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
+}

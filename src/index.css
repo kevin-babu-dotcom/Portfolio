@@ -1,5 +1,9 @@
 @import "./tailwind.css";
 
+/* Hide default cursor */
+* {
+  cursor: none !important;
+}
 
 :root {
   font-family: gilroy;

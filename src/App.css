@@ -5,8 +5,13 @@
   /* text-align: center;  */
     
 }
-
-
+.rdp-root {
+  --rdp-accent-color: black; /* Change the accent color to indigo. */
+  --rdp-accent-background-color: rgb(0, 0, 0); /* Change the accent background color. */
+  /* Add more CSS variables here. */
+  --rdp-day-height: 30px; /* Set the height of each day cell. */
+  --rdp-day-width: 40px;  
+}
 
 @font-face {
   font-family: 'Gilroy';
