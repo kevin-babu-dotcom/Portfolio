@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black rounded-4xl border-gray-800 border text-white py-8 mt-8">
+    <footer className="bg-black rounded-4xl border-gray-800 border text-gray-400 py-8 mt-8">
       <div className="max-w-[1600px] mx-auto px-6 text-center">
-        <div className="border-t border-white pt-6">
+        <div className="border-t border-gray-300 pt-6">
           <p className="text-white text-sm">
             © 2025 Kevin Babu. Made with ❤️ and lots of coffee.
           </p>

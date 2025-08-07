@@ -13,10 +13,10 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative md:m-0 m-3 min-h-screen">
       {/* 1. Background Video */}
       <video
-        className="absolute  top-0 left-0 w-full h-full object-cover  p-12 z-0"
+        className="w-full h-full object-cover p-2 absolute top-0 left-0 md:p-12 z-0 "
         src={myVideo}  // Use the imported video
         autoPlay
         loop
@@ -25,11 +25,11 @@ function App() {
 
       {/* 2. Main Content (z-10 above video) */}
       <CustomCursor />
-      <div className="relative z-10 flex min-h-screen items-center  bg-white/5 backdrop-blur-md border border-white/50 shadow-glow rounded-2xl m-12 p-8">
+      <div className="bg-white/5 m-2 backdrop-blur-md border-2 border-white/50 shadow-glow rounded-2xl md:relative md:z-10 md:flex md:min-h-screen md:items-center md:m-12 md:p-8 py-8 ">
         
         <PageTransition>
           <Navbar />
-          <div className="flex-1">
+          <div className="md:flex-1">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />

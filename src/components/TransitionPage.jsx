@@ -15,7 +15,7 @@ const TransitionPage = ({ text = "Hi I'm Kevin Babu", onComplete }) => {
         className="text-center px-4"
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1.8, opacity: 1 }}
-        exit={{ scale: 3, opacity: 0 }}
+        exit={{ scale: 3, opacity: 0 }} 
         transition={{ 
           duration: 0.6, 
           ease: [0.43, 0.13, 0.23, 0.96]

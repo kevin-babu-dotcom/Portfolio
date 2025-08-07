@@ -127,7 +127,7 @@ const MapComponent = ({ onLocationSelect }) => {
   }
 
   return (
-    <div className="h-full w-full rounded-4xl border-20  border-white justify-center items-center flex text-5xl font-family-gilroy overflow-hidden relative">
+    <div className="h-[75vh] md:h-full w-full rounded-4xl border-20  border-white justify-center items-center flex text-5xl font-family-gilroy overflow-hidden relative">
       {/* {isLoadingLocation && (
         <div className="absolute inset-0 bg-blue-100 flex items-center justify-center z-10 rounded-2xl">
           <div className="text-center">

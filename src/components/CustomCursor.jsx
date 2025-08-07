@@ -33,8 +33,9 @@ const CustomCursor = () => {
 
 
   return (
-    <>
-        <motion.div
+    // This wrapper will hide the cursor on screens smaller than the 'md' breakpoint (768px)
+    <div className="hidden md:block">
+      <motion.div
         className="fixed -top-3.5 bg-white/20 backdrop-blur-[2px] -left-4  pointer-events-none z-[9999]"
         style={{
           width: '50px',
@@ -57,7 +58,7 @@ const CustomCursor = () => {
       />
       
       {/* Inner circle - smaller, more opaque */}
-      <motion.div
+      {/* <motion.div
         className="fixed top-0 left-0 pointer-events-none z-[9999]"
         style={{
           width: '20px',
@@ -66,7 +67,7 @@ const CustomCursor = () => {
           borderRadius: '50%',
           border: '3px solid rgba(0, 0, 0, 0.8)',
           transform: 'translate(-50%, -50%)',
-          boxShadow: '0 0 20px rgba(0, 0, 0, 0.8), 0 0 16px rgba(255, 255, 55, 0.8)',
+          boxShadow: '0 0 20px rgba(0, 0, 0, 0.8), 0 0 16px rgba(55, 55, 55, 0.8)',
         }}
         animate={{
           x: mousePosition.x,
@@ -78,11 +79,8 @@ const CustomCursor = () => {
           damping: 30,
           mass: 0.2,
         }}
-      />
-          
-      {/* Outer circle - larger, less opaque */}
-      
-    </>
+      /> */}
+    </div>
   );
 };
 
