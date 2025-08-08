@@ -25,7 +25,7 @@ function App() {
 
       {/* 2. Main Content (z-10 above video) */}
       <CustomCursor />
-      <div className="bg-white/5 m-2 backdrop-blur-md border-2 border-white/50 shadow-glow rounded-2xl md:relative md:z-10 md:flex md:min-h-screen md:items-center md:m-12 md:p-8 py-8 ">
+      <div className="md:bg-white/5 m-2 backdrop-blur-md border-2 bg-transparent border-white/50 shadow-glow rounded-2xl md:relative md:z-10 md:flex md:min-h-screen md:items-center md:m-12 md:p-8 py-8 ">
         
         <PageTransition>
           <Navbar />

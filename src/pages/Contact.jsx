@@ -80,8 +80,8 @@ const Contact = () => {
 };
 
     return(
-        <div className="md:py-3 h-full md:my-3 mx-auto flex-col flex w-full md:p-0 py-6">
-        <div className="md:grid min-h-screen grid-rows-[2fr_1fr_1fr] md:grid-cols-[1fr_1fr_1fr] md:gap-4 h-full w-full  ">
+        <div className="md:py-3 h-full md:my-3 mx-auto flex-col flex w-full md:p-0 py-6 p-1">
+        <div className="md:grid min-h-screen grid-rows-[2fr_1fr_1fr] md:grid-cols-[1fr_1fr_1fr] md:gap-4 h-full w-full p-1 ">
             <div className="talk col-span-1 rounded-3xl row-span-1 row-start-1 col-start-1 bg-white border-3 h-full w-full flex justify-center items-center hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] flex-col md:my-0 my-5 md:py-0 py-10">
             <span className="font-black leading leading-20 text-[clamp(2rem,3.8vw,4vw)] lg:text-[clamp(1.5rem,3.5vw,3.5vw)]">Got an Idea?</span>
             <span className="font-light text-[clamp(2rem,3.8vw,4vw)]  md:py-0 py-6">Let's Talk!</span>
@@ -89,7 +89,7 @@ const Contact = () => {
             <div className="map col-span-2 row-span-1 rounded-3xl border-10 border-[#6C6594] row-start-1 col-start-2  bg-white h-full w-full hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] md:my-0 my-10 md:py-0  ">
             <MapComponent onLocationSelect={handleLocationSelect}/>
             </div>
-            <div className="callender col-span-1 row-span-2 row-start-2 col-start-1 bg-orange-300 border-3 h-full w-full rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] md:my-0 my-9 ">
+            <div className="callender col-span-1 row-span-2 row-start-2 -p-1 col-start-1 bg-transparent  rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] md:my-0 my-9 ">
                 <MyDatePicker 
                     onDateSelect={handleDateSelect}
                     initialDate={formData.date}/> 

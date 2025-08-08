@@ -14,13 +14,13 @@ export function MyDatePicker({ onDateSelect, initialDate }) {
   };
 
   return (
-    <div className="h-full w-full rounded-2xl  p-6 flex flex-col items-center justify-center text-black">
-      <div className="text-center  mb-4">
+    <div className="h-full w-full rounded-3xl  flex flex-col items-center justify-center text-black">
+      <div className="text-center  ">
         {/* <h3 className="text- font-bold mb-2">Select Date</h3> */}
         {/* <p className="text-xl">When would you like to meet?</p> */}
       </div>
       
-      <div className=" bg-white hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]  transition-all border-2 duration-300 text-black rounded-xl p-4 shadow-none">
+      <div className=" bg-white hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]  transition-all border-2 duration-300 text-black rounded-3xl md:p-9 p-1 shadow-none">
         <DayPicker
           className="--rdp-accent-color: black"
           mode="single"
@@ -33,7 +33,7 @@ export function MyDatePicker({ onDateSelect, initialDate }) {
                 Selected: {selected.toLocaleDateString()}
               </div>
             ) : (
-              <div className="text-center mt-2 text-black">
+              <div className="text-center mt-2 text-orange-500 font-medium">
                 Pick a day
               </div>
             )
