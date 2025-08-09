@@ -40,7 +40,7 @@ const Toast = ({ message, type, onClose }) => {
                 </div>
                 <button
                     onClick={onClose}
-                    className="absolute top-3 right-3 text-current hover:opacity-70 transition-opacity"
+                    className="absolute top-3 right-3 text-current opacity-70 transition-opacity"
                 >
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -154,19 +154,19 @@ const Contact = () => {
             )}
             
             <div className="md:grid min-h-screen grid-rows-[2fr_1fr_1fr] md:grid-cols-[1fr_1fr_1fr] md:gap-4 h-full w-full p-1 ">
-                <div className="talk col-span-1 rounded-3xl row-span-1 row-start-1 col-start-1 bg-white border-3 h-full w-full flex justify-center items-center hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] flex-col md:my-0 my-5 md:py-0 py-10">
+                <div className="talk col-span-1 rounded-3xl row-span-1 row-start-1 col-start-1 bg-white border-3 h-full w-full flex justify-center items-center shadow-[0_0_30px_rgba(255,255,255,0.6)] flex-col md:my-0 my-5 md:py-0 py-10">
                     <span className="font-black leading leading-20 text-[clamp(2rem,3.8vw,4vw)] lg:text-[clamp(1.5rem,3.5vw,3.5vw)]">Got an Idea?</span>
                     <span className="font-light text-[clamp(2rem,3.8vw,4vw)]  md:py-0 py-6">Let's Talk!</span>
                 </div>
-                <div className="map col-span-2 row-span-1 rounded-3xl border-10 border-[#6C6594] row-start-1 col-start-2  bg-white h-full w-full hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] md:my-0 my-10 md:py-0  ">
+                <div className="map col-span-2 row-span-1 rounded-3xl border-10 border-[#6C6594] row-start-1 col-start-2  bg-white h-full w-full shadow-[0_0_30px_rgba(255,255,255,0.6)] md:my-0 my-10 md:py-0  ">
                     <MapComponent onLocationSelect={handleLocationSelect}/>
                 </div>
-                <div className="callender col-span-1 row-span-2 row-start-2 -p-1 col-start-1 bg-transparent  rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] md:my-0 my-9 ">
+                <div className="callender col-span-1 row-span-2 row-start-2 -p-1 col-start-1 bg-transparent  rounded-3xl shadow-[0_0_30px_rgba(255,255,255,0.6)] md:my-0 my-9 ">
                     <MyDatePicker 
                         onDateSelect={handleDateSelect}
                         initialDate={formData.date}/> 
                 </div>
-                <div className="message col-span-1 p-5 flex flex-col hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] border-3 justify-between items-center row-span-2 row-start-2 col-start-2 bg-white h-full w-full rounded-3xl md:my-0 my-8">
+                <div className="message col-span-1 p-5 flex flex-col shadow-[0_0_30px_rgba(255,255,255,0.6)] border-3 justify-between items-center row-span-2 row-start-2 col-start-2 bg-white h-full w-full rounded-3xl md:my-0 my-8">
                     <label className="block mb-2 text-3xl font-bold p-2">Message</label>
                     <textarea 
                         name="message" 
@@ -177,7 +177,7 @@ const Contact = () => {
                         disabled={isSubmitting}
                     ></textarea>
                 </div>
-                <div className="email col-span-1 row-span-1 row-start-2 col-start-3  flex flex-col justify-center border-3 p-6 items-center bg-white h-full w-full rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] md:my-0 my-8">
+                <div className="email col-span-1 row-span-1 row-start-2 col-start-3  flex flex-col justify-center border-3 p-6 items-center bg-white h-full w-full rounded-3xl shadow-[0_0_30px_rgba(255,255,255,0.6)] md:my-0 my-8">
                     <label className="block text-3xl font-bold p-2 mb-2">Email</label>
                     <input 
                         type="email" 
@@ -189,7 +189,7 @@ const Contact = () => {
                         disabled={isSubmitting}
                     />
                 </div>
-                <div className="send col-span-1 row-span-1 p-8 row-start-3 col-start-3  bg-orange-300 h-full border-3 w-full rounded-3xl hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]">
+                <div className="send col-span-1 row-span-1 p-8 row-start-3 col-start-3  bg-orange-300 h-full border-3 w-full rounded-3xl shadow-[0_0_30px_rgba(255,255,255,0.6)]">
                     <FancyButton 
                         onClick={handleSubmit} 
                         className={`bg-white text-black p-4 rounded-full w-full h-full flex items-center justify-center transition-opacity ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}

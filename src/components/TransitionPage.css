@@ -1,7 +1,7 @@
 /* Additional styles for smooth transitions */
 .page-transition-enter {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(18px);
 }
 
 .page-transition-enter-active {

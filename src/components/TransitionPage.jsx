@@ -28,7 +28,7 @@ const TransitionPage = ({ text = "Hi I'm Kevin Babu", onComplete }) => {
         }}
       >
         <motion.h1
-          className="text-4xl sm:text-6xl md:text-9xl lg:text-12xl font-bold text-white tracking-wider leading-none transition-text"
+          className="text-4xl sm:text-6xl md:text-7xl lg:text-12xl font-bold text-white tracking-wider leading-none transition-text"
           style={{ fontFamily: 'gilroy, sans-serif' }}
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -43,7 +43,7 @@ const TransitionPage = ({ text = "Hi I'm Kevin Babu", onComplete }) => {
         </motion.h1>
         
         {/* Animated underline */}
-        {/* <motion.div
+        <motion.div
           className="w-24 sm:w-32 md:w-40 h-0.5 sm:h-1 bg-white mx-auto mt-4 sm:mt-6 md:mt-8"
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
@@ -53,10 +53,10 @@ const TransitionPage = ({ text = "Hi I'm Kevin Babu", onComplete }) => {
             delay: 0.5, 
             ease: [0.43, 0.13, 0.23, 0.96] 
           }}
-        /> */}
+        /> */
 
         {/* Optional loading dots */}
-        {/* <motion.div
+        /* <motion.div
           className="flex justify-center space-x-2 mt-6 sm:mt-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -78,7 +78,7 @@ const TransitionPage = ({ text = "Hi I'm Kevin Babu", onComplete }) => {
               }}
             />
           ))}
-        </motion.div> */}
+        </motion.div>
       </motion.div>
     </motion.div>
   );
