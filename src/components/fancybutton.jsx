@@ -32,7 +32,7 @@ const FancyButton = ({ text, to, href,icon, onClick, className = "", ...props })
   // Base button classes
   const baseClasses = `
   flex items-center justify-center border border-black rounded-full font-gilroy
-  transition-colors no-underline cursor-pointer hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]
+  transition-colors gap-2 no-underline cursor-pointer hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]
   inline-block overflow-hidden
   ${currentColor}
   ${cleanedClassName}
@@ -74,7 +74,7 @@ const FancyButton = ({ text, to, href,icon, onClick, className = "", ...props })
   const buttonContent = (
     <>
       <div style={rippleStyle}></div>
-      <span style={{ position: 'relative', zIndex: 1 }} className="flex items-center justify-center w-full h-full">
+      <span style={{ position: 'relative', zIndex: 1 }} className="flex gap-1 items-center justify-center w-full h-full">
         {icon && <span className="">{icon}</span>}
         {text}
         {props.children}

@@ -5,7 +5,7 @@ import './TransitionPage.css';
 const TransitionPage = ({ text = "Hi I'm Kevin Babu", onComplete }) => {
   return (
     <motion.div
-      className="fixed inset-0 bg-black z-50 flex items-start pt-50 justify-center"
+      className="fixed inset-0 bg-transparent z-50 flex items-start pt-50 justify-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -53,10 +53,10 @@ const TransitionPage = ({ text = "Hi I'm Kevin Babu", onComplete }) => {
             delay: 0.5, 
             ease: [0.43, 0.13, 0.23, 0.96] 
           }}
-        /> */
+        /> 
 
         {/* Optional loading dots */}
-        /* <motion.div
+        <motion.div
           className="flex justify-center space-x-2 mt-6 sm:mt-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
