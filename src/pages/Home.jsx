@@ -37,7 +37,7 @@ const Home = () => {
                 <p>Have some</p>
                 <span >questions?</span>
               </div>        
-              <FancyButton to="/contact" className="bg-white absolute md:left-70 md:top-0 bottom-18 left-45 border-black border-1.5 rounded-full p-0 w-14 h-14 flex items-center justify-center"
+              <FancyButton to="/contact" className="bg-white absolute md:left-68 md:top-0 bottom-18 left-45  border-black border-1.5 rounded-full p-0 w-14 h-14 flex items-center justify-center"
                 icon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                 </svg>}
