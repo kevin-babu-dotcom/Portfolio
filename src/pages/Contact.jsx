@@ -152,21 +152,21 @@ const Contact = () => {
                     onClose={hideToast} 
                 />
             )}
-            
-            <div className="md:grid min-h-screen grid-rows-[2fr_1fr_1fr] md:grid-cols-[1fr_1fr_1fr] md:gap-4 h-full w-full p-1 ">
-                <div className="talk col-span-1 rounded-3xl row-span-1 row-start-1 col-start-1 bg-white border-3 h-full w-full flex justify-center items-center shadow-[0_0_30px_rgba(255,255,255,0.6)] flex-col md:my-0 my-5 md:py-0 py-10">
-                    <span className="font-black leading leading-20 text-[clamp(2rem,3.8vw,4vw)] lg:text-[clamp(1.5rem,3.5vw,3.5vw)]">Got an Idea?</span>
-                    <span className="font-light text-[clamp(2rem,3.8vw,4vw)]  md:py-0 py-6">Let's Talk!</span>
+
+            <div className="md:grid min-h-screen grid-rows-[2fr_1fr_1fr] md:grid-cols-[1fr_1fr_1fr] md:gap-4 h-full w-full p-1">
+                <div className="talk col-span-1 rounded-3xl row-span-1 row-start-1 col-start-1 bg-white border-3 h-full w-full flex justify-center items-center shadow-[0_0_30px_rgba(255,255,255,0.6)] flex-col md:my-0 my-5 md:py-0 py-10 hover:liquidglass transition-[background,box-shadow,border-color] duration-300 ease-out group">
+                    <span className="font-black leading leading-20 text-[clamp(2rem,3.8vw,4vw)] lg:text-[clamp(1.5rem,3.5vw,3.5vw)] group-hover:text-white">Got an Idea?</span>
+                    <span className="font-light text-[clamp(2rem,3.8vw,4vw)]  md:py-0 py-6 group-hover:text-gray-300">Let's Talk!</span>
                 </div>
                 <div className="map col-span-2 row-span-1 rounded-3xl border-10 border-[#6C6594] row-start-1 col-start-2  bg-white h-full w-full shadow-[0_0_30px_rgba(255,255,255,0.6)] md:my-0 my-10 md:py-0  ">
                     <MapComponent onLocationSelect={handleLocationSelect}/>
                 </div>
-                <div className="callender col-span-1 row-span-2 row-start-2 -p-1 col-start-1 bg-transparent  rounded-3xl shadow-[0_0_30px_rgba(255,255,255,0.6)] md:my-0 my-9 ">
+                <div className="callender col-span-1 row-span-2 row-start-2 -p-1 col-start-1 bg-transparent  rounded-3xl shadow-[0_0_30px_rgba(255,255,255,0.6)] md:my-0 my-9 hover:liquidglass transition-[background,box-shadow,border-color] duration-300 ease-out group ">
                     <MyDatePicker 
                         onDateSelect={handleDateSelect}
                         initialDate={formData.date}/> 
                 </div>
-                <div className="message col-span-1 p-5 flex flex-col shadow-[0_0_30px_rgba(255,255,255,0.6)] border-3 justify-between items-center row-span-2 row-start-2 col-start-2 bg-white h-full w-full rounded-3xl md:my-0 my-8">
+                <div className="message col-span-1 p-5 flex flex-col shadow-[0_0_30px_rgba(255,255,255,0.6)] border-3 justify-between items-center row-span-2 row-start-2 col-start-2 bg-white h-full w-full rounded-3xl md:my-0 my-8 ">
                     <label className="block mb-2 text-3xl font-bold p-2">Message</label>
                     <textarea 
                         name="message" 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black rounded-4xl border-gray-800 border text-gray-400 py-8 mt-8">
+    <footer className="bg-black rounded-4xl border-gray-800 border text-gray-400 py-8 mt-8 hover:liquidglass transition-[background,box-shadow,border-color] duration-300 ease-out group">
       <div className="max-w-[1600px] mx-auto px-6 text-center">
         <div className="border-t border-gray-300 pt-6">
           <p className="text-white text-sm">

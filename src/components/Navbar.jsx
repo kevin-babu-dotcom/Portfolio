@@ -7,7 +7,8 @@ const Navbar = () => {
 
   return (
     <div className="h-full w-full my-5 p-2 md:p-0 md:my-0 grid">
-      <nav className="bg-white hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] rounded-3xl border shadow-sm md:m-0 md:text-base py-3 md:px-8">
+      <nav className="bg-white hover:liquidglass
+  transition-[background,box-shadow,border-color] duration-300 ease-out   rounded-3xl border shadow-sm md:m-0 md:text-base py-3 md:px-8">
         {/* Top row: brand + hamburger (hamburger hidden on md+) */}
         <div className="mx-auto flex items-center justify-between px-3 md:px-0">
           <div className="mb-0">

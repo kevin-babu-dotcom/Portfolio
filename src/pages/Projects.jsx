@@ -56,31 +56,32 @@ const Projects = () => {
   ];
 
   return (
-    <div className="md:py-2  md:my-0 mx-auto flex-col flex w-full md:p-0 p-5">
-      <div className="md:grid grid-cols-3 grid-rows-3 h-full w-full gap-4 p-5">
+    <div className="md:py-2  md:my-0 mx-auto flex-col flex w-full md:p-0 p-2">
+      <div className="md:grid grid-cols-3 grid-rows-3 h-full w-full gap-4  md:py-5">
         {/* Featured Projects Header */}
-        <div className="col-span-1 rounded-3xl row-span-2 row-start-1 col-start-1 bg-white border-2 h-full w-full flex justify-center items-center shadow-[0_0_30px_rgba(255,255,255,0.6)] flex-col md:my-0 my-6 md:py-0 py-10">
+        <div className="col-span-1 rounded-3xl row-span-2 row-start-1 col-start-1 group bg-white border-2 h-full w-full flex justify-center items-center shadow-[0_0_30px_rgba(255,255,255,0.6)] flex-col md:my-0 my-6 md:py-0 py-10 hover:liquidglass
+  transition-[background,box-shadow,border-color] duration-300 ease-out">
           <div className="text-center p-6">
-            <h1 className="text-4xl font-bold mb-4">Featured Projects</h1>
-            <p className="text-gray-600 text-lg mb-6">A showcase of my recent work and experiments</p>
+            <h1 className="text-4xl font-bold mb-4 text-black group-hover:text-white">Featured Projects</h1>
+            <p className="text-gray-600 text-lg mb-6 group-hover:text-gray-100">A showcase of my recent work and experiments</p>
             <div className="flex flex-col gap-3">
-              <div className="flex items-center gap-2 text-sm text-gray-500">
+              <div className="flex items-center gap-2 text-sm text-gray-500 group-hover:text-gray-100">
                 <div className="w-3 h-3 bg-cyan-500 rounded-full"></div>
                 <span>Dashboards</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-gray-500">
+              <div className="flex items-center gap-2 text-sm text-gray-500 group-hover:text-gray-100">
                 <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                 <span>Productivity</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-gray-500">
+              <div className="flex items-center gap-2 text-sm text-gray-500 group-hover:text-gray-100">
                 <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                 <span>Accessibility Tools</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-gray-500">
+              <div className="flex items-center gap-2 text-sm text-gray-500 group-hover:text-gray-100">
                 <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
                 <span>Machine Learning</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-gray-500">
+              <div className="flex items-center gap-2 text-sm text-gray-500 group-hover:text-gray-100">
                 <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
                 <span>Fun Projects</span>
               </div>
@@ -92,19 +93,21 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div 
             key={project.id} 
-            className={`col-span-1 rounded-3xl row-span-1 ${project.color} border-2 h-full w-full shadow-[0_0_30px_rgba(255,255,255,0.6)] md:my-0 my-6 md:py-0 py-6 relative overflow-hidden`}
+            className={`col-span-1  rounded-3xl row-span-1 ${project.color} hover:liquidglass
+  transition-[background,box-shadow,border-color] group duration-300 border-2 h-full w-full shadow-[0_0_30px_rgba(255,255,255,0.6)] md:my-0 my-6 md:py-0 py-6 relative overflow-hidden`}
           >
             {/* Project Content */}
-            <div className="p-5 h-full flex flex-col justify-between">
+            <div className="p-5 h-full flex flex-col justify-between hover:liquidglass
+  transition-[background,box-shadow,border-color] group duration-300 ease-out">
               {/* Header */}
-              <div>
-                <div className="flex items-center gap-2 mb-3">
+              <div >
+                <div className="flex items-center gap-2 mb-3 ">
                   <div className={`w-4 h-4 ${project.accent} rounded-full`}></div>
-                  <h2 className="text-xl font-bold text-gray-800">{project.title}</h2>
+                  <h2 className="text-xl font-bold group-hover:text-white text-gray-800">{project.title}</h2>
                 </div>
                 
                 {/* Description */}
-                <p className="text-sm text-gray-700 mb-4 leading-relaxed">
+                <p className="text-sm text-gray-700 mb-4 group-hover:text-gray-100 leading-relaxed">
                   {project.description}
                 </p>
 
@@ -155,7 +158,8 @@ const Projects = () => {
         {[...Array(2)].map((_, index) => (
           <div 
             key={`coming-soon-${index}`}
-            className="col-span-1 rounded-3xl row-span-1 bg-gray-50 border-3 border-dashed border-gray-300 h-full w-full flex justify-center items-center shadow-[0_0_30px_rgba(255,255,255,0.6)] flex-col md:my-0 my-6 md:py-0 py-10"
+            className="col-span-1 rounded-3xl row-span-1 hover:liquidglass
+  transition-[background,box-shadow,border-color] group duration-300 bg-gray-50 border-3 border-dashed border-gray-300 h-full w-full flex justify-center items-center shadow-[0_0_30px_rgba(255,255,255,0.6)] flex-col md:my-0 my-6 md:py-0 py-10"
           >
             <div className="text-center p-6">
               <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -163,8 +167,8 @@ const Projects = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-600 mb-2">Coming Soon</h3>
-              <p className="text-sm text-gray-500">More exciting projects on the way!</p>
+              <h3 className="text-xl font-semibold text-gray-600 mb-2 group-hover:text-white">Coming Soon</h3>
+              <p className="text-sm text-gray-500 group-hover:text-white">More exciting projects on the way!</p>
             </div>
           </div>
         ))}

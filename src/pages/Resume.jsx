@@ -4,11 +4,12 @@ import downloadicon from "../assets/images/downloadicon.png"; // Import the down
 import resumepdf from "../assets/KEVINBABURESUME.pdf"; // Import the resume PDF
 
 const Resume = () => {
-  return <div className="md:py-3 h-full md:my-3 mx-auto flex-col flex w-full md:p-0 p-6">
-    <div className="grid grid-cols-3 grid-rows-3 h-full w-full gap-4 p-6">
-      <div className="talk col-span-3 rounded-3xl my-10 row-span-3 row-start-1 col-start-1 bg-white border-3 h-full w-full flex justify-center items-center shadow-[0_0_30px_rgba(255,255,255,0.6)] flex-col">
+  return <div className="md:py-3 h-full md:my-3 mx-auto flex-col flex w-full md:p-0 p-2 ">
+    <div className="grid grid-cols-3 grid-rows-3 h-full w-full gap-4 p-2 ">
+      <div className="talk col-span-3 rounded-3xl md:my-10 my-5 row-span-3 row-start-1 col-start-1 hover:liquidglass
+  transition-[background,box-shadow,border-color] duration-300 ease-out group hover:text-white bg-white border-3 h-full w-full flex justify-center items-center  flex-col">
         <h1 className="text-4xl font-bold text-center mt-10">Resume</h1>
-        <p className="text-center p-5 mt-4 text-gray-600">Download my latest resume below!</p>
+        <p className="text-center p-5 mt-4 group-hover:text-gray-300 text-gray-600">Download my latest resume below!</p>
         <FancyButton 
               href={resumepdf}
               target="_blank"
