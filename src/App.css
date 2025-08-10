@@ -71,9 +71,13 @@
 
 /* Tailwind utility applied only on hover via `hover:liquidglass` */
 @utility liquidglass {
-  /* Much clearer glass: less tint, less blur */
-  @apply border border-white/20 bg-white/1 backdrop-blur-lg ring-1 ring-white/10;
-  box-shadow: 0 8px 40px -8px rgba(0,0,0,.25);
+  @apply border border-white/20 bg-white/1 backdrop-blur-lg ring-1 ring-white/15;
+  box-shadow: 
+    0 8px 40px -8px rgba(0,0,0,1),
+    inset 0 3px 6px rgba(255,255,255,0.15),
+    inset 0 -3px 6px rgba(0,0,0,0.15),
+    inset 2px 0 4px rgba(255,255,255,0.08),
+    inset -2px 0 4px rgba(0,0,0,0.08);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
 }
@@ -92,13 +96,13 @@
 .liquidfx::before,
 .liquidfx::after {
   content: "";
-  position: absolute; inset: -20%;
+  position: absolute; inset: -30%;
   pointer-events: none;
   filter: blur(30px);
   mix-blend-mode: screen;
   opacity: 0;
   transition: opacity 400ms ease;
-  animation: blobFloat 9s ease-in-out infinite;
+  animation: blobFloat 1s ease-in-out infinite;
 }
 
 .liquidfx::before {
@@ -110,9 +114,17 @@
   background:
     radial-gradient(45% 45% at 65% 35%, rgba(107,142,35,.35) 0%, rgba(107,142,35,0) 60%),
     radial-gradient(30% 30% at 35% 70%, rgba(148,39,5,.30) 0%, rgba(148,39,5,0) 60%);
-  animation-duration: 12s;
+  animation-duration: 1s;
 }
 
 /* Fade in the highlights on hover */
 .liquidfx:hover::before,
 .liquidfx:hover::after { opacity: 1; }
+
+
+
+/* Pressed-in Neumorphic style utility */
+
+
+
+

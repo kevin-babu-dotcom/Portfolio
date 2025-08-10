@@ -15,17 +15,7 @@ const Home = () => {
         {/* Left grid */}
         <div className="md:grid grid-rows-[56.9fr_43.1fr] grid-cols-9 md:gap-4 h-full flex-1 col-start-1 ">
 
-            <div className="
-  PassionCard liquidfx
-  md:p-0 p-2
-  bg-white 
-  col-span-6 border
-  shadow-[0_0_30px_rgba(255,255,255,0.6)]
-  row-start-1 h-full w-full
-  rounded-3xl md:relative flex md:overflow-hidden flex-col items-center justify-center
-  hover:liquidglass
-  transition-[background,box-shadow,border-color] duration-500 ease-out hover:text-white
-">
+            <div className="PassionCard liquidfx  md:p-0 p-2  bg-white neumorphic-inset    col-span-6 border     row-start-1 h-full w-full  rounded-3xl md:relative flex md:overflow-hidden flex-col items-center justify-center  hover:liquidglass  transition-[background,box-shadow,border-color] duration-500 ease-out hover:text-white">
               <div className="md:absolute md:top-10 right-12 md:p-0 p-2"><SpirographIcon /></div>
               <div className="md:absolute md:bottom-15 left-10 md:p-0 p-5 flex flex-col ">
                 <span className="font-black  text-[clamp(2rem,3.8vw,4vw)] lg:text-[clamp(1.5rem,3.5vw,3.5vw)]">Dude with a</span>

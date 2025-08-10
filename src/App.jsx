@@ -16,7 +16,7 @@ function App() {
     <div className="relative md:m-0 m-3 min-h-screen ">
       {/* 1. Background Video */}
       <video
-        className="w-full h-full object-cover   absolute top-0 left-0 md:px-12 py-3 z-0  "
+        className="w-full h-full object-cover   absolute top-0 left-0 md:px-8 py-3 z-0  "
         src={myVideo}  // Use the imported video
         autoPlay
         loop
@@ -25,7 +25,7 @@ function App() {
 
       {/* 2. Main Content (z-10 above video) */}
 
-      <div className="md:bg-white/5 backdrop-blur border-2 bg-transparent short-shadow  border-white/30 shadow-glow rounded-xl md:relative md:z-10 md:flex md:min-h-screen md:items-center md:m-12 md:p-8 ">
+      <div className="md:bg-white/1 backdrop-blur border-2 bg-transparent shadow-[inset_0_3px_6px_rgba(255,255,255,0.15),inset_0_-3px_6px_rgba(0,0,0,0.15),inset_2px_0_4px_rgba(255,255,255,0.08),inset_-2px_0_4px_rgba(0,0,0,0.08)]  border-white/30  rounded-xl md:relative md:z-10 md:flex md:min-h-screen md:items-center md:m-8 md:p-9 ">
 
         <PageTransition>
           <Navbar />

@@ -19,4 +19,21 @@
 }
 
 
-
+@layer components {
+  .neomorphism {
+    box-shadow: 
+      8px 8px 16px rgba(163, 177, 198, 0.6),
+      -8px -8px 16px rgba(255, 255, 255, 0.5),
+      inset 0px 0px 0px rgba(255, 255, 255, 0),
+      inset 0px 0px 0px rgba(163, 177, 198, 0);
+    transition: all 0.3s ease;
+  }
+  
+  .neomorphism:hover {
+    box-shadow: 
+      4px 4px 8px rgba(163, 177, 198, 0.6),
+      -4px -4px 8px rgba(255, 255, 255, 0.5),
+      inset 4px 4px 8px rgba(163, 177, 198, 0.2),
+      inset -4px -4px 8px rgba(255, 255, 255, 0.9);
+  }
+}
