@@ -14,7 +14,7 @@ const Navbar = () => {
           <div className="mb-0">
             <FancyButton
               to="/"
-              className="border-2 border-black bg-orange-300 rounded-full text-black no-underline px-6 py-4 m-3 md:m-0 md:text-xl"
+              className="border-2 border-black bg-orange-300 rounded-2xl text-black no-underline px-6 py-4 m-3 md:m-0 md:text-xl"
             >
               <span className="italic font-medium">KEVIN&nbsp;</span>
               <span className="font-bold">BABU</span>
