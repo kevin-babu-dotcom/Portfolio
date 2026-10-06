@@ -57,12 +57,13 @@ const ProjectEntry = ({ project, index }) => {
   ].filter(Boolean);
 
   return (
-    <article className={`group flex min-h-[330px] flex-col rounded-3xl border border-black p-6 transition-[background,box-shadow,transform,border-color] duration-300 hover:liquidglass hover:-translate-y-1 hover:shadow-[0_16px_35px_rgba(0,0,0,0.2)] ${theme.card}`}>
+    <article className={`group flex h-full flex-col rounded-3xl border border-black p-6 transition-[background,box-shadow,transform,border-color] duration-300 hover:liquidglass hover:-translate-y-1 hover:shadow-[0_16px_35px_rgba(0,0,0,0.2)] ${theme.card}`}>
       <div className="flex items-start gap-3">
         <span className={`mt-1.5 h-4 w-4 shrink-0 rounded-full ${theme.dot}`} />
         <div>
           <h2 className="text-2xl font-black leading-tight text-gray-900 transition-colors group-hover:text-white">{project.name}</h2>
           <p className="mt-1 text-sm italic text-gray-600 transition-colors group-hover:text-gray-200">{project.descriptor}</p>
+          <p className="mt-2 text-[10px] font-bold uppercase tracking-[0.12em] text-gray-500 transition-colors group-hover:text-gray-300">{project.domain}</p>
         </div>
       </div>
 
@@ -89,7 +90,7 @@ const ProjectEntry = ({ project, index }) => {
         )}
 
         <div className="mt-6">
-          <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500 transition-colors group-hover:text-gray-300">Built with</p>
+          <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500 transition-colors group-hover:text-gray-300">{project.stackName}</p>
           <div className="flex flex-wrap gap-2">
           {project.tech.map((tech) => (
             <span
@@ -102,7 +103,7 @@ const ProjectEntry = ({ project, index }) => {
         </div>
         </div>
 
-      <div ref={codeRef} className="mt-6 overflow-hidden rounded-2xl bg-gray-950 text-white">
+      <div ref={codeRef} className="mt-6 flex flex-1 flex-col overflow-hidden rounded-2xl bg-gray-950 text-white">
         <div className="flex items-center gap-1.5 border-b border-white/10 px-4 py-2.5">
           <span className="h-2 w-2 rounded-full bg-gray-700" />
           <span className="h-2 w-2 rounded-full bg-gray-700" />
@@ -111,7 +112,7 @@ const ProjectEntry = ({ project, index }) => {
             ~/{project.name.toLowerCase().replace(/\s+/g, "-")}
           </span>
         </div>
-        <pre className="overflow-x-auto px-4 py-4 font-mono text-[10px] leading-5">
+        <pre className="flex flex-1 flex-col justify-center overflow-x-auto px-4 py-4 font-mono text-[10px] leading-5">
           {project.code.map((line, lineIndex) => (
             <div
               key={lineIndex}
@@ -124,7 +125,7 @@ const ProjectEntry = ({ project, index }) => {
         </pre>
       </div>
 
-      <div className="mt-auto flex gap-3 pt-8">
+      <div className="mt-5 flex gap-3">
           {project.githubUrl && (
             <FancyButton
               href={project.githubUrl}

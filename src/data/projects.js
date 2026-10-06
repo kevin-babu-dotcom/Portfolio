@@ -2,6 +2,8 @@
  * @typedef {Object} Project
  * @property {string} name         Short project name
  * @property {string} descriptor   Subtitle under the name
+ * @property {string} domain       Primary product or engineering domain
+ * @property {string} stackName    Named technical architecture
  * @property {string} description  2–3 line summary with metrics
  * @property {string[]} tech       Tech chips
  * @property {string | null} githubUrl
@@ -17,7 +19,9 @@
 export const projects = [
   {
     name: "Placement Cell",
-    descriptor: "MEC Placement Portal",
+    descriptor: "Multi-Module Recruitment Management System",
+    domain: "EdTech · Recruitment Systems",
+    stackName: "Recruitment Intelligence Platform",
     description:
       "Official placement portal for Govt. Model Engineering College. 10+ modules covering recruiters, student profiles, drives and analytics, serving 1,500+ students and coordinators.",
     role: "Full Stack Developer",
@@ -39,7 +43,9 @@ export const projects = [
   },
   {
     name: "RetailPulse",
-    descriptor: "Retail Sales Data Pipeline",
+    descriptor: "Airflow-Orchestrated ETL & Analytics API",
+    domain: "Retail Analytics · Data Engineering",
+    stackName: "Batch ETL Orchestration",
     description:
       "End-to-end ETL pipeline processing 641K+ retail sales records with Python, Pandas and PostgreSQL, orchestrated by Airflow and exposed via FastAPI.",
     role: "Data Engineer",
@@ -60,7 +66,9 @@ export const projects = [
   },
   {
     name: "ALP",
-    descriptor: "Adaptive Learning Platform",
+    descriptor: "AI-Driven Adaptive Learning Engine",
+    domain: "EdTech · Applied AI",
+    stackName: "Adaptive Learning Intelligence Layer",
     description:
       "Adaptive coding platform that personalises learning paths from individual and cohort data, with an AI evaluation pipeline and a public dashboard across 1,400+ problems for 70+ students.",
     role: "Full Stack Developer",
@@ -83,7 +91,9 @@ export const projects = [
   },
   {
     name: "StressLab",
-    descriptor: "API Stress Dashboard",
+    descriptor: "Real-Time API Load Testing & Latency Observability",
+    domain: "Developer Tools · Observability",
+    stackName: "Real-Time Performance Observability",
     description:
       "Load-testing dashboard that simulates high-concurrency traffic with Autocannon and streams live p99 latency via Server-Sent Events, with SQLite-backed trend analysis to catch degrading endpoints.",
     tech: ["Node.js", "React", "Autocannon", "SSE", "SQLite"],
@@ -99,7 +109,9 @@ export const projects = [
   },
   {
     name: "HydraList",
-    descriptor: "AI To-Do List",
+    descriptor: "Generative AI Task Expansion Engine",
+    domain: "Productivity · Generative AI",
+    stackName: "Recursive Productivity Intelligence",
     description:
       "AI-powered to-do list with a twist: complete a task and two more appear. Built with React and Tailwind CSS.",
     tech: ["React", "Tailwind CSS", "AI"],
@@ -114,7 +126,9 @@ export const projects = [
   },
   {
     name: "AudioNav",
-    descriptor: "Assistive Navigation",
+    descriptor: "Audio-Cue Assistive Navigation System",
+    domain: "Accessibility · Audio Computing",
+    stackName: "Context-Aware Assistive Audio",
     description:
       "Assistive tool that helps visually challenged users navigate their surroundings using audio cues.",
     tech: ["Accessibility", "Audio Processing", "Navigation"],
@@ -128,8 +142,10 @@ export const projects = [
     ],
   },
   {
-    name: "Student Score Predictor",
-    descriptor: "ML Model",
+    name: "ScoreCast",
+    descriptor: "Regression-Based Academic Performance Predictor",
+    domain: "Machine Learning · Education",
+    stackName: "Predictive Academic Modeling",
     description:
       "Machine learning model that predicts a student's score based on hours studied, built with Python and Scikit-learn.",
     tech: ["Python", "Machine Learning", "Scikit-learn"],
